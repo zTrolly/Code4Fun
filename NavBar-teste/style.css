@@ -26,7 +26,7 @@ nav{
   height: 7rem;
   display:flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content:center;
 }
 
 .nav-list{
@@ -42,7 +42,7 @@ nav{
 }
 
 .nav-link{
-  font-size:1.4rem;
+  font-size:2rem;
   text-transform:uppercase;
   text-decoration: none;
   color: #fff;
@@ -51,7 +51,7 @@ nav{
 .active{
   height:2px;
   width:10rem;
-  background-color: #fff;
+  background-color: crimson;
   position: absolute;
   bottom:  -1rem;
   transition: transform .6s;
@@ -72,7 +72,7 @@ nav{
 
 
 body{
-  background: url("./kate-laine-ha5L-EUna4I-unsplash.jpg") center no-repeat scroll;
+  background: url("./reed-geiger-IQvaFtXHz1k-unsplash.jpg") center no-repeat local;
   background-size: cover;
 
 }
@@ -120,20 +120,21 @@ body{
 
 .botao{
   padding: 1rem 0;
-  color: #000;
+  color: #fff;
   font-weight: bolder;
   padding: .5rem 1.5rem;
-  border: 3px solid #fff;
+  border: 3px solid crimson;
   font-size:2rem;
   text-decoration: none;
   text-transform:uppercase;
-  background-color: #fff;
+  background-color: crimson;
   transition: all 0.8s;
+
 }
 
 .botao:hover{
   background: none;
-  color: #fff;
+  color: crimson;
 
 }
 
@@ -169,6 +170,8 @@ body{
 .product img{
   background-size: cover;
   height: 400px;
-
 }
 
+header{
+ 
+}

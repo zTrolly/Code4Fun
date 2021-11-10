@@ -1,0 +1,174 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html{
+  font-family:'Roboto', sans-serif;
+  font-size:10px;
+}
+
+header{
+  background-color:none;
+  z-index: 1000;
+}
+
+.container1{
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+}
+
+nav{
+  width: 100%;
+  height: 7rem;
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.nav-list{
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+.nav-item{
+  padding:1rem 0;
+  min-width: 10rem;
+  text-align: center;
+}
+
+.nav-link{
+  font-size:1.4rem;
+  text-transform:uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.active{
+  height:2px;
+  width:10rem;
+  background-color: #fff;
+  position: absolute;
+  bottom:  -1rem;
+  transition: transform .6s;
+}
+
+.nav-item:nth-child(1):hover ~ .active{
+  transform: translateX(0);
+}
+.nav-item:nth-child(2):hover ~ .active{
+  transform: translateX(10rem);
+}
+.nav-item:nth-child(3):hover ~ .active{
+  transform: translateX(20rem);
+}
+.nav-item:nth-child(4):hover ~ .active{
+  transform: translateX(30rem);
+}
+
+
+body{
+  background: url("./kate-laine-ha5L-EUna4I-unsplash.jpg") center no-repeat scroll;
+  background-size: cover;
+
+}
+
+.filter{
+  position: absolute;
+  z-index: -10000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+
+}
+
+.content{
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 2rem;
+  width: 50%;
+  height: 100%;
+  justify-content:center;
+  align-items:center;
+  margin-top: 250px;
+  color: #fff;
+  letter-spacing:.3rem;
+  border: 5px solid #fff;
+  padding: 3rem 6rem;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(30px);
+  box-shadow:15px 15px 12px rgba(0,0,0,0.5);
+}
+.content p{
+  font-family: monospace;
+  margin-top: 30px;
+}
+
+.main{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  gap:3rem;
+  margin-bottom: 50px;
+}
+
+.botao{
+  padding: 1rem 0;
+  color: #000;
+  font-weight: bolder;
+  padding: .5rem 1.5rem;
+  border: 3px solid #fff;
+  font-size:2rem;
+  text-decoration: none;
+  text-transform:uppercase;
+  background-color: #fff;
+  transition: all 0.8s;
+}
+
+.botao:hover{
+  background: none;
+  color: #fff;
+
+}
+
+.divisor::before{
+  content: " ";
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: #fff;
+}
+
+::selection{
+  background: #fff;
+  color: #000;
+}
+
+
+.pricing{
+  margin-top: 60px;
+}
+.product{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  background-color: #edede5;
+  color: #000;
+  border-right: 5px solid #000;
+  font-size: 2rem;
+
+}
+
+.product img{
+  background-size: cover;
+  height: 400px;
+
+}
+

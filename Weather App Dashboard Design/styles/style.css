@@ -76,7 +76,7 @@ body{
 
 .logo{
   padding: 0;
-  margin-bottom:2rem;
+  margin-bottom:50px;
   position: relative;
   left: -17px;
   width: 10px;
@@ -86,7 +86,7 @@ body{
   display:flex;
   flex-direction: column;
   list-style: none;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content:center;
 }
 
@@ -95,6 +95,7 @@ body{
   width: fit-content;
   padding: .6rem;
   border-radius: 12px;
+  font-size: x-large;
 }
 
 
@@ -114,6 +115,7 @@ body{
   flex-direction: row;
   gap:20px;
   font-size: x-large;
+  letter-spacing: .2rem;
 }
 
 .profile h2{
@@ -147,6 +149,7 @@ body{
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 50px;
 }
 .bell{
   padding: .6rem;
@@ -163,7 +166,7 @@ body{
 }
 
 .content{
-  width: 70%
+  width: 75%
 }
 
 /*FIM TOPBAR*/
@@ -172,19 +175,23 @@ body{
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 10px;
-  justify-content:center;
-  align-items:center;
+  gap: 25px;
+  align-items:stretch;
+  justify-content:space-between;
 }
 
 .weather,.air-quality{
   display: flex;
   flex-direction: column;
-  gap:35px;
-  width: 45%;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 50%;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -6px var(--BLACK1);
 }
 
-.weather_top{
+.weather_top,.air_top{
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
@@ -194,32 +201,78 @@ body{
   flex-direction: column;
   gap: .7rem;
 }
-
-.weather{
-  padding: 2rem;
-  background: url("../assets/SVG/scenery-2546328.svg") center no-repeat;
-  color: var(--WHITE1);
-  border-radius: 20px;
+.weather-title h4,.air-title h4{
+  font-weight: bold;
 }
-
-.max-min{
+.weather{
+  background: url("../assets/SVG/tower-2636594.svg") center top no-repeat;
+  color: var(--WHITE1);
+  font-size: 1.2rem;
+}
+.weather-icon, .air-icon{
+  background-color: var(--WHITE1);
+  color: var(--ORANGE1);
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.max-min,.wind-speed{
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
   align-items: center;
 }
 .max{
-  font-size: xx-large;
+  font-size: xxx-large;
 }
-.min{
+.min,.aqi{
   padding:.1rem .3rem;
+  font-size: x-large;
   border-radius: 5px;
   font-weight: bolder;
   color: var(--BLACK1);
   background-color: var(--WHITE1);
 }
-.filter{
-  backdrop-filter: blur(10px);
-  width: 100%;
-  height: 100%;
+
+.aqi{
+  background-color: var(--GREEN1);
+  font-size: medium;
+  padding:.3rem;
+}
+
+.others{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.card{
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: var(--BLACK1);
+  font-weight: bold;
+  align-items:center;
+}
+
+.card:nth-child(2){
+  background-color: var(--GREEN1);
+}
+
+.air-quality{
+  background: url("../assets/SVG/mountains-6641490.svg") center right no-repeat;
+  background-size: cover;
+  font-size: 1.2rem;
+}
+
+.air-icon{
+  font-size:large;
+}
+.air-title{
+  font-weight: bold;
+  font-size: large;
+}
+
+.air_txt{
+  font-weight: bolder;
 }

@@ -174,8 +174,9 @@ body{
 .weatherAndAir{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
   width: 100%;
-  gap: 25px;
   align-items:stretch;
   justify-content:space-between;
 }
@@ -183,9 +184,8 @@ body{
 .weather,.air-quality{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 50px;
-  width: 50%;
+  gap: 35px;
+  width: 48%;
   padding: 2.5rem;
   border-radius: 20px;
   box-shadow: 0 10px 15px -6px var(--BLACK1);
@@ -244,6 +244,8 @@ body{
 .others{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content:space-between;
 }
 
